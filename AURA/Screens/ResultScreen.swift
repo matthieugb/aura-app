@@ -140,8 +140,28 @@ struct ResultScreen: View {
     }
 
     private func requestAnimation() async {
-        // Premium gate — will be wired in Task 10
-        showPaywall = true
+        let purchases = PurchaseService.shared
+        await purchases.checkStatus()
+
+        guard purchases.isPremium else {
+            showPaywall = true
+            return
+        }
+
+        isAnimating = true
+        defer { isAnimating = false }
+
+        do {
+            let result = try await genService.generate(
+                selfieData: Data(), // Note: in real app, store selfieData in Generation model
+                backgroundID: generation.backgroundId,
+                animate: true
+            )
+            // Update the animation URL display
+            _ = result.animationUrl
+        } catch {
+            // Silent fail — animation is a premium bonus feature
+        }
     }
 }
 

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4A299778276D5D8A8AE0D5 /* AppConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC61A50E0F08A8EF7C4A0D /* AppConfigTests.swift */; };
 		2DBBE5E4ABA8C11F472AFBD1 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 292D1CB81422461CDFC14868 /* RevenueCat */; };
 		53BFCC307F42B836F79F1D36 /* AURAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F800894881B12A42D3081F9 /* AURAApp.swift */; };
+		5D4CE25BB780692B63BA702A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCFF9F132A18D73E948FC2 /* AppConfig.swift */; };
+		688F091DF46CC15EFB29A610 /* Secrets.xcconfig.example in Resources */ = {isa = PBXBuildFile; fileRef = 8A06352EBFC6CC1D20270E63 /* Secrets.xcconfig.example */; };
 		F0CC5073115C318E6C2661ED /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2A87E035B5C2D04FFE7FB65A /* Supabase */; };
 		FAD1D93D09F9EC5D42F06E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9AF8F623266F3C56E71397 /* Assets.xcassets */; };
 		FBBDE1EC9A4AA76CC7E4DB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E990664F21708943B9412A /* ContentView.swift */; };
@@ -26,11 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A7DCAD911C85E8DF40EC93B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		2F800894881B12A42D3081F9 /* AURAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AURAApp.swift; sourceTree = "<group>"; };
 		4A01308E08C12DE89069FAF4 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		551016BAA65C901D901ECB69 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		7BAAE4C10F7C5AB2A4FD2268 /* AURATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AURATests.swift; sourceTree = "<group>"; };
 		8733CC637939BF9B89502F5B /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		8A06352EBFC6CC1D20270E63 /* Secrets.xcconfig.example */ = {isa = PBXFileReference; path = Secrets.xcconfig.example; sourceTree = "<group>"; };
 		8AA8629B4C608AC99895F9EC /* AURATests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AURATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B149CDA589F6433492FA391 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		8FF7A77CFF1B4B460BD70FFE /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
@@ -40,7 +45,9 @@
 		BB9AF8F623266F3C56E71397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13FAC5B5C217DF3D82A8475 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		E0088DB52E0BF1668875FDE1 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		E8BCFF9F132A18D73E948FC2 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		ED32157D6D5712742BBA969E /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		F6FC61A50E0F08A8EF7C4A0D /* AppConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				C13FAC5B5C217DF3D82A8475 /* .gitkeep */,
+				E8BCFF9F132A18D73E948FC2 /* AppConfig.swift */,
+				2A7DCAD911C85E8DF40EC93B /* Secrets.xcconfig */,
+				8A06352EBFC6CC1D20270E63 /* Secrets.xcconfig.example */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -125,6 +135,7 @@
 		77FB15696E1139ADA8883BE5 /* AURATests */ = {
 			isa = PBXGroup;
 			children = (
+				F6FC61A50E0F08A8EF7C4A0D /* AppConfigTests.swift */,
 				7BAAE4C10F7C5AB2A4FD2268 /* AURATests.swift */,
 			);
 			path = AURATests;
@@ -264,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD1D93D09F9EC5D42F06E08 /* Assets.xcassets in Resources */,
+				688F091DF46CC15EFB29A610 /* Secrets.xcconfig.example in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF82238DAF80B17E231214A1 /* AURATests.swift in Sources */,
+				1E4A299778276D5D8A8AE0D5 /* AppConfigTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BFCC307F42B836F79F1D36 /* AURAApp.swift in Sources */,
+				5D4CE25BB780692B63BA702A /* AppConfig.swift in Sources */,
 				FBBDE1EC9A4AA76CC7E4DB03 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

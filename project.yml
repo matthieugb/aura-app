@@ -45,6 +45,9 @@ targets:
           UIImageName: ""
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+        SUPABASE_URL: $(SUPABASE_URL)
+        SUPABASE_ANON_KEY: $(SUPABASE_ANON_KEY)
+        REVENUECAT_API_KEY: $(REVENUECAT_API_KEY)
   AURATests:
     type: bundle.unit-test
     platform: iOS

@@ -1,0 +1,54 @@
+name: AURA
+options:
+  bundleIdPrefix: com.aura
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    IPHONEOS_DEPLOYMENT_TARGET: 16.0
+    TARGETED_DEVICE_FAMILY: 1
+    INFOPLIST_FILE: AURA/Info.plist
+    PRODUCT_BUNDLE_IDENTIFIER: com.aura.app
+    DEVELOPMENT_TEAM: ""
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    CODE_SIGN_STYLE: Automatic
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: 2.0.0
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios
+    from: 4.0.0
+targets:
+  AURA:
+    type: application
+    platform: iOS
+    sources:
+      - AURA
+    dependencies:
+      - package: Supabase
+        product: Supabase
+      - package: RevenueCat
+        product: RevenueCat
+    info:
+      path: AURA/Info.plist
+      properties:
+        CFBundleDisplayName: AURA
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSCameraUsageDescription: AURA uses your camera to take your selfie.
+        NSPhotoLibraryAddUsageDescription: AURA saves your generated photos to your library.
+        UILaunchScreen:
+          UIColorName: ""
+          UIImageName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+  AURATests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - AURATests
+    dependencies:
+      - target: AURA

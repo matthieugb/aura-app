@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DBBE5E4ABA8C11F472AFBD1 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 292D1CB81422461CDFC14868 /* RevenueCat */; };
+		53BFCC307F42B836F79F1D36 /* AURAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F800894881B12A42D3081F9 /* AURAApp.swift */; };
+		F0CC5073115C318E6C2661ED /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2A87E035B5C2D04FFE7FB65A /* Supabase */; };
+		FAD1D93D09F9EC5D42F06E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9AF8F623266F3C56E71397 /* Assets.xcassets */; };
+		FBBDE1EC9A4AA76CC7E4DB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E990664F21708943B9412A /* ContentView.swift */; };
+		FF82238DAF80B17E231214A1 /* AURATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAAE4C10F7C5AB2A4FD2268 /* AURATests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE2CC5F8232EE93C301946D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84694665BD21DD65FCD581B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C454CBDAB87480A7CD3F7F;
+			remoteInfo = AURA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F800894881B12A42D3081F9 /* AURAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AURAApp.swift; sourceTree = "<group>"; };
+		4A01308E08C12DE89069FAF4 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		551016BAA65C901D901ECB69 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		7BAAE4C10F7C5AB2A4FD2268 /* AURATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AURATests.swift; sourceTree = "<group>"; };
+		8733CC637939BF9B89502F5B /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		8AA8629B4C608AC99895F9EC /* AURATests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AURATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B149CDA589F6433492FA391 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		8FF7A77CFF1B4B460BD70FFE /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		931D9AA9BB0EABA6D22C7C05 /* AURA.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AURA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25FEA46F0BA7097197DF579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B6E990664F21708943B9412A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB9AF8F623266F3C56E71397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C13FAC5B5C217DF3D82A8475 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		E0088DB52E0BF1668875FDE1 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		ED32157D6D5712742BBA969E /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71CC7ECF69CB32152B8455C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CC5073115C318E6C2661ED /* Supabase in Frameworks */,
+				2DBBE5E4ABA8C11F472AFBD1 /* RevenueCat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145112337D63DB83CC2138FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				931D9AA9BB0EABA6D22C7C05 /* AURA.app */,
+				8AA8629B4C608AC99895F9EC /* AURATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3787FA484CB23AA90583713F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E0088DB52E0BF1668875FDE1 /* .gitkeep */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		46858A444DED8666363C685F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F800894881B12A42D3081F9 /* AURAApp.swift */,
+				B6E990664F21708943B9412A /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B474B4F70DAA4E0D5515D67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A01308E08C12DE89069FAF4 /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62A10910A3BCB5B16F874691 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ED32157D6D5712742BBA969E /* .gitkeep */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6514DD6EEA3871A065281EFF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8FF7A77CFF1B4B460BD70FFE /* .gitkeep */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		73749FFBF3171C119F4684CB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C13FAC5B5C217DF3D82A8475 /* .gitkeep */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		74EAE6E59004B2B6F7177D30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8733CC637939BF9B89502F5B /* .gitkeep */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		77FB15696E1139ADA8883BE5 /* AURATests */ = {
+			isa = PBXGroup;
+			children = (
+				7BAAE4C10F7C5AB2A4FD2268 /* AURATests.swift */,
+			);
+			path = AURATests;
+			sourceTree = "<group>";
+		};
+		8951061AFC07E18603E8038F = {
+			isa = PBXGroup;
+			children = (
+				DF37E410CA9A28EE85779BFC /* AURA */,
+				77FB15696E1139ADA8883BE5 /* AURATests */,
+				145112337D63DB83CC2138FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF37E410CA9A28EE85779BFC /* AURA */ = {
+			isa = PBXGroup;
+			children = (
+				BB9AF8F623266F3C56E71397 /* Assets.xcassets */,
+				A25FEA46F0BA7097197DF579 /* Info.plist */,
+				46858A444DED8666363C685F /* App */,
+				E9B110432974581442642F17 /* Camera */,
+				62A10910A3BCB5B16F874691 /* Components */,
+				73749FFBF3171C119F4684CB /* Config */,
+				4B474B4F70DAA4E0D5515D67 /* Models */,
+				FA77088B77E8034552137076 /* Navigation */,
+				6514DD6EEA3871A065281EFF /* Screens */,
+				74EAE6E59004B2B6F7177D30 /* Services */,
+				3787FA484CB23AA90583713F /* Utils */,
+			);
+			path = AURA;
+			sourceTree = "<group>";
+		};
+		E9B110432974581442642F17 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8B149CDA589F6433492FA391 /* .gitkeep */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		FA77088B77E8034552137076 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				551016BAA65C901D901ECB69 /* .gitkeep */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5C454CBDAB87480A7CD3F7F /* AURA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82AE88D8A2AC6A82EF9495A6 /* Build configuration list for PBXNativeTarget "AURA" */;
+			buildPhases = (
+				2C94FDC2886215C745150854 /* Sources */,
+				A1DB2B9CB4963D89CED3D4DF /* Resources */,
+				71CC7ECF69CB32152B8455C0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AURA;
+			packageProductDependencies = (
+				2A87E035B5C2D04FFE7FB65A /* Supabase */,
+				292D1CB81422461CDFC14868 /* RevenueCat */,
+			);
+			productName = AURA;
+			productReference = 931D9AA9BB0EABA6D22C7C05 /* AURA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB52D9295EDBF107B21ACA82 /* AURATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74BBD7D695824F647AFFDF83 /* Build configuration list for PBXNativeTarget "AURATests" */;
+			buildPhases = (
+				21B7907603D2B2ADFF4D8BD3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D4AE1BADAD895A2D1BDDD0 /* PBXTargetDependency */,
+			);
+			name = AURATests;
+			packageProductDependencies = (
+			);
+			productName = AURATests;
+			productReference = 8AA8629B4C608AC99895F9EC /* AURATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84694665BD21DD65FCD581B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B5C454CBDAB87480A7CD3F7F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					FB52D9295EDBF107B21ACA82 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4ED8AD61F86E640C63ACB23C /* Build configuration list for PBXProject "AURA" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8951061AFC07E18603E8038F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BCFAF25FF1E776FE1B11A201 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				CB622931E512EDEFB5D8FBF7 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 145112337D63DB83CC2138FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5C454CBDAB87480A7CD3F7F /* AURA */,
+				FB52D9295EDBF107B21ACA82 /* AURATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DB2B9CB4963D89CED3D4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD1D93D09F9EC5D42F06E08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21B7907603D2B2ADFF4D8BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF82238DAF80B17E231214A1 /* AURATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C94FDC2886215C745150854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BFCC307F42B836F79F1D36 /* AURAApp.swift in Sources */,
+				FBBDE1EC9A4AA76CC7E4DB03 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D4AE1BADAD895A2D1BDDD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C454CBDAB87480A7CD3F7F /* AURA */;
+			targetProxy = BE2CC5F8232EE93C301946D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B605EEFEB65EAC22C01255E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AURA.app/AURA";
+			};
+			name = Release;
+		};
+		322BAC2A9076B1929F1989E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AURA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aura.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		50C3AA856B2812FBCAC9ED93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AURA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FBFEC640C0C1922D61578D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AURA.app/AURA";
+			};
+			name = Debug;
+		};
+		BA325B4F7ED1E8FD5F05D866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AURA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F69CBED109A0E2D3ACBE5C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = AURA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aura.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED8AD61F86E640C63ACB23C /* Build configuration list for PBXProject "AURA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69CBED109A0E2D3ACBE5C18 /* Debug */,
+				322BAC2A9076B1929F1989E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74BBD7D695824F647AFFDF83 /* Build configuration list for PBXNativeTarget "AURATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FBFEC640C0C1922D61578D5 /* Debug */,
+				1B605EEFEB65EAC22C01255E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		82AE88D8A2AC6A82EF9495A6 /* Build configuration list for PBXNativeTarget "AURA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C3AA856B2812FBCAC9ED93 /* Debug */,
+				BA325B4F7ED1E8FD5F05D866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCFAF25FF1E776FE1B11A201 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		CB622931E512EDEFB5D8FBF7 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		292D1CB81422461CDFC14868 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCFAF25FF1E776FE1B11A201 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		2A87E035B5C2D04FFE7FB65A /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB622931E512EDEFB5D8FBF7 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 84694665BD21DD65FCD581B6 /* Project object */;
+}

@@ -1,0 +1,15 @@
+# Xcode
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+.DS_Store
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# Secrets
+AURA/Config/Secrets.xcconfig

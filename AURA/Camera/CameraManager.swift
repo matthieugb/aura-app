@@ -100,9 +100,9 @@ extension CameraManager: AVCapturePhotoCaptureDelegate {
     ) {
         guard let data = photo.fileDataRepresentation(),
               let image = UIImage(data: data) else { return }
-        // Mirror front camera image
-        let mirrored = image.withHorizontallyFlippedOrientation()
-        Task { @MainActor in self.capturedImage = mirrored }
+        // Mirror only for front camera
+        let finalImage = currentPosition == .front ? image.withHorizontallyFlippedOrientation() : image
+        Task { @MainActor in self.capturedImage = finalImage }
     }
 }
 

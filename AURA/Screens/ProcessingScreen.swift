@@ -3,8 +3,8 @@ import SwiftUI
 struct ProcessingScreen: View {
     let request: GenerationRequest
     @StateObject private var genService = GenerationService.shared
-    @StateObject private var bgStore = BackgroundStore.shared
     @EnvironmentObject private var router: AppRouter
+    @State private var errorMessage: String?
 
     var body: some View {
         ZStack {
@@ -16,50 +16,70 @@ struct ProcessingScreen: View {
                 // Floating preview card
                 ZStack {
                     RoundedRectangle(cornerRadius: 24)
-                        .fill(bgStore.selected?.previewGradient ??
-                              LinearGradient(colors: [Color(hex: "18120C")],
-                                             startPoint: .top, endPoint: .bottom))
+                        .fill(
+                            LinearGradient(
+                                colors: [Color(hex: "C4894A").opacity(0.3), Color(hex: "18120C")],
+                                startPoint: .top, endPoint: .bottom
+                            )
+                        )
                         .frame(width: 220, height: 280)
 
-                    // Light sweep animation
+                    if let firstPhoto = request.selfiePhotos.first,
+                       let img = UIImage(data: firstPhoto) {
+                        Image(uiImage: img)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 220, height: 280)
+                            .opacity(0.5)
+                    }
+
                     RoundedRectangle(cornerRadius: 24)
                         .fill(
                             LinearGradient(
                                 colors: [.clear, Color(hex: "C4894A").opacity(0.3), .clear],
-                                startPoint: .leading,
-                                endPoint: .trailing
+                                startPoint: .leading, endPoint: .trailing
                             )
                         )
                         .frame(width: 220, height: 280)
                         .modifier(SweepModifier())
                 }
-                .modifier(FloatModifier())
+                .frame(width: 220, height: 280)
+                .clipShape(RoundedRectangle(cornerRadius: 24))
                 .padding(.bottom, 48)
 
-                Text("Creating your light")
+                Text("Creating your scene")
                     .font(.custom("CormorantGaramond-Light", size: 28))
                     .foregroundColor(.white)
                     .tracking(2)
                     .padding(.bottom, 8)
 
-                Text("THIS TAKES ~15 SECONDS")
+                Text("THIS TAKES ~20 SECONDS")
                     .font(.system(size: 11, weight: .medium))
                     .tracking(4)
                     .foregroundColor(Color(hex: "9A8878"))
-                    .padding(.bottom, 48)
+                    .padding(.bottom, 8)
+
+                // Prompt preview
+                Text("« \(request.prompt) »")
+                    .font(.custom("CormorantGaramond-LightItalic", size: 15))
+                    .foregroundColor(Color(hex: "C4894A").opacity(0.7))
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .padding(.horizontal, 40)
+                    .padding(.bottom, 40)
 
                 // Steps
                 VStack(spacing: 0) {
                     ProcessingStep(
-                        label: "Removing background",
-                        state: stepState(for: .removingBackground)
+                        label: "Analysing your photos",
+                        state: stepState(for: .generating)
                     )
                     ProcessingStep(
-                        label: "Adapting light with IC-Light",
-                        state: stepState(for: .relighting)
+                        label: "Creating your scene",
+                        state: stepState(for: .finalizing)
                     )
                     ProcessingStep(
-                        label: "Compositing final image",
+                        label: "Finalising result",
                         state: stepState(for: .done(""))
                     )
                 }
@@ -70,16 +90,17 @@ struct ProcessingScreen: View {
         }
         .navigationBarHidden(true)
         .task { await runGeneration() }
+        .alert("Generation failed", isPresented: .constant(errorMessage != nil)) {
+            Button("Back") { errorMessage = nil; router.pop() }
+        } message: {
+            Text(errorMessage ?? "")
+        }
     }
 
-    private func stepState(for targetProgress: GenerationService.GenerationProgress) -> ProcessingStep.StepState {
-        let order: [GenerationService.GenerationProgress] = [
-            .removingBackground, .relighting, .done("")
-        ]
-        guard let targetIdx = order.firstIndex(of: targetProgress),
-              let currentIdx = order.firstIndex(of: currentProgressKey) else {
-            return .pending
-        }
+    private func stepState(for target: GenerationService.GenerationProgress) -> ProcessingStep.StepState {
+        let order: [GenerationService.GenerationProgress] = [.generating, .finalizing, .done("")]
+        guard let targetIdx = order.firstIndex(of: target),
+              let currentIdx = order.firstIndex(of: currentProgressKey) else { return .pending }
         if currentIdx > targetIdx { return .done }
         if currentIdx == targetIdx { return .active }
         return .pending
@@ -87,30 +108,27 @@ struct ProcessingScreen: View {
 
     private var currentProgressKey: GenerationService.GenerationProgress {
         switch genService.progress {
-        case .idle, .removingBackground: return .removingBackground
-        case .relighting, .animating: return .relighting
+        case .idle, .generating: return .generating
+        case .finalizing, .animating: return .finalizing
         case .done, .failed: return .done("")
         }
     }
 
     private func runGeneration() async {
         do {
-            let result = try await genService.generate(
-                selfieData: request.selfieData,
-                backgroundID: request.backgroundID
-            )
-            let gen = Generation(
+            let result = try await genService.generate(request: request)
+            var gen = Generation(
                 id: result.generationId,
-                backgroundId: request.backgroundID,
-                resultUrl: result.resultUrl,
+                prompt: request.prompt,
+                resultUrls: result.resultUrls,
                 animationUrl: result.animationUrl,
                 status: "done",
                 createdAt: Date()
             )
-            router.push(.result(gen))
+            gen.ratio = request.ratio
+            router.push(.pick(gen))
         } catch {
-            // Pop back to camera on error
-            router.pop()
+            errorMessage = error.localizedDescription
         }
     }
 }
@@ -141,18 +159,11 @@ struct ProcessingStep: View {
             Spacer()
 
             if state == .done {
-                Text("✓")
-                    .font(.system(size: 12))
-                    .foregroundColor(Color(hex: "C4894A"))
+                Text("✓").font(.system(size: 12)).foregroundColor(Color(hex: "C4894A"))
             }
         }
         .padding(.vertical, 16)
-        .overlay(
-            Rectangle()
-                .fill(Color.white.opacity(0.06))
-                .frame(height: 1),
-            alignment: .bottom
-        )
+        .overlay(Rectangle().fill(Color.white.opacity(0.06)).frame(height: 1), alignment: .bottom)
     }
 
     var dotColor: Color {
@@ -161,7 +172,6 @@ struct ProcessingStep: View {
         case .active, .done: return Color(hex: "C4894A")
         }
     }
-
     var labelColor: Color {
         switch state {
         case .pending: return .white.opacity(0.4)
@@ -174,29 +184,20 @@ struct ProcessingStep: View {
 // ── Animations ────────────────────────────────────────────────────────────────
 struct FloatModifier: ViewModifier {
     @State private var floating = false
-
     func body(content: Content) -> some View {
-        content
-            .offset(y: floating ? -8 : 0)
+        content.offset(y: floating ? -8 : 0)
             .onAppear {
-                withAnimation(
-                    .easeInOut(duration: 2).repeatForever(autoreverses: true)
-                ) { floating = true }
+                withAnimation(.easeInOut(duration: 2).repeatForever(autoreverses: true)) { floating = true }
             }
     }
 }
 
 struct SweepModifier: ViewModifier {
     @State private var offset: CGFloat = -220
-
     func body(content: Content) -> some View {
-        content
-            .offset(x: offset)
-            .clipped()
+        content.offset(x: offset).clipped()
             .onAppear {
-                withAnimation(
-                    .linear(duration: 2).repeatForever(autoreverses: false)
-                ) { offset = 220 }
+                withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) { offset = 220 }
             }
     }
 }

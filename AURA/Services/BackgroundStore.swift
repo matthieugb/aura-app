@@ -5,7 +5,7 @@ import Supabase
 final class BackgroundStore: ObservableObject {
     static let shared = BackgroundStore()
 
-    @Published var backgrounds: [Background] = Self.defaults
+    @Published var backgrounds: [Background] = BackgroundStore.defaults
     @Published var selected: Background?
     @Published var isLoading = false
 

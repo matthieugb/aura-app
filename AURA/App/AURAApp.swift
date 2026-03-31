@@ -19,21 +19,42 @@ struct AURAApp: App {
                     SplashScreen(showOnboarding: true)
                 } else {
                     NavigationStack(path: $router.path) {
-                        CameraScreen()
+                        CaptureModeScreen()
                             .navigationDestination(for: AppRoute.self) { route in
                                 switch route {
-                                case .camera:
-                                    CameraScreen()
+                                case .captureMode:
+                                    CaptureModeScreen()
+                                case .camera(let mode, let ratio):
+                                    CameraScreen(mode: mode, ratio: ratio)
+                                case .prompt(let photos, let ratio):
+                                    PromptScreen(photos: photos, ratio: ratio)
+                                case .pick(let gen):
+                                    PickScreen(generation: gen)
                                 case .gallery:
                                     GalleryScreen()
                                 case .processing(let req):
                                     ProcessingScreen(request: req)
-                                case .result(let gen):
-                                    ResultScreen(generation: gen)
+                                case .result(let url, let gen):
+                                    ResultScreen(chosenUrl: url, generation: gen)
+                                case .animate(let url, let gen):
+                                    AnimateScreen(imageUrl: url, generation: gen)
+                                case .videoResult(let url):
+                                    VideoResultScreen(videoUrl: url)
+                                case .videoProcessing(let imageUrl, let prompt, let model):
+                                    VideoProcessingScreen(imageUrl: imageUrl, prompt: prompt, model: model)
                                 }
                             }
                     }
                     .environmentObject(router)
+                    .environmentObject(CreditsService.shared)
+                }
+            }
+            .onChange(of: auth.session) { _, newSession in
+                if let userId = newSession?.user.id.uuidString {
+                    // Identify user in RevenueCat — required for webhook to credit the right user
+                    Purchases.shared.logIn(userId) { _, _, _ in }
+                } else {
+                    Purchases.shared.logOut { _, _ in }
                 }
             }
         }

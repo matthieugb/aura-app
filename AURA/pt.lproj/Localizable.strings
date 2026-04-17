@@ -1,0 +1,222 @@
+/* Onboarding slide 5 */
+"onboarding_slide5_title" = "Sempre na vanguarda";
+"onboarding_slide5_subtitle" = "";
+"onboarding_slide5_description" = "Acompanhamos cada novo lançamento para integrar os modelos mais recentes , aqueles que combinam qualidade excepcional e custos controlados.";
+
+/* Onboarding */
+"Commencer" = "Começar";
+"Suivant" = "Próximo";
+"Passer" = "Pular";
+
+/* Onboarding page titles */
+"Shootez" = "Capture";
+"Transformez" = "Transforme";
+"Animez" = "Anime";
+
+/* Onboarding page subtitles */
+"Votre studio photo IA" = "Seu estúdio de fotos IA";
+"Selfie ou galerie" = "Selfie ou galeria";
+"Fond, lumière, style" = "Fundo, luz, estilo";
+"Photos en vidéos" = "Fotos em vídeos";
+
+/* Onboarding page descriptions */
+"Portraits, mises en scène, vidéos.\nTout part d'un selfie." = "Retratos, cenas, vídeos.\nTudo a partir de um selfie ou de uma foto.";
+"Prenez un selfie ou importez une photo\npour commencer à générer avec l'IA." = "Tire um selfie ou importe uma foto\npara começar a gerar com IA.";
+"Changez de mise en scène\nen quelques mots." = "Mude sua cena\ncom poucas palavras.";
+"Donnez vie à vos images\navec du mouvement et du son." = "Dê vida às suas imagens\ncom movimento e som.";
+
+/* Onboarding slide 4 prompt chip */
+"un oiseau s'approche de la fenêtre" = "um pássaro se aproxima da janela";
+
+/* Splash / Auth */
+"Continuer avec Apple" = "Continuar com Apple";
+"Aucune donnée partagée sans votre accord" = "Nenhum dado compartilhado sem o seu consentimento";
+
+/* Settings */
+"Paramètres" = "Configurações";
+"Revoir l'introduction" = "Ver introdução novamente";
+"Restaurer les achats" = "Restaurar compras";
+"Supprimer mon compte" = "Excluir minha conta";
+"Se déconnecter" = "Sair";
+
+/* Paywall */
+"Crédits AURA" = "Créditos AURA";
+"3 crédits · 2 portraits  ·  4 crédits · 1 vidéo 4s" = "3 créditos · 2 retratos  ·  4 créditos · 1 vídeo 4s";
+"Recharges" = "Recargas";
+"Abonnements" = "Assinaturas";
+"Résiliation à tout moment depuis les réglages de l'App Store." = "Cancele a qualquer momento nas configurações da App Store.";
+
+/* Capture mode */
+"How do you want to shoot?" = "Como você quer capturar?";
+"Utiliser une photo de référence" = "Usar uma foto de referência";
+"Rapide" = "Rápido";
+"Importer" = "Importar";
+"Depuis la galerie" = "Da galeria";
+"Selfie" = "Selfie";
+"1 photo" = "1 foto";
+"Utiliser plusieurs photos de référence" = "Usar várias fotos de referência";
+"Meilleure qualité" = "Melhor qualidade";
+"Plusieurs photos" = "Várias fotos";
+"Visage scan" = "Scan facial";
+"3 – 5 photos" = "3 – 5 fotos";
+
+/* Prompt screen */
+"LIEU, ACTION, LUMIÈRE" = "LOCAL, AÇÃO, LUZ";
+"GLISSER · PINCER POUR RECADRER" = "ARRASTE · APERTE PARA RECORTAR";
+"Fermer" = "Concluído";
+"3 crédits" = "3 créditos";
+
+/* Animate screen */
+"Créer une vidéo" = "Criar um vídeo";
+"La vidéo commencera par cette image (audio inclus)" = "O vídeo começará com esta imagem (áudio incluído)";
+"ACTION, MOUVEMENT, SON" = "AÇÃO, MOVIMENTO, SOM";
+"· facultatif" = "· opcional";
+"Générer" = "Gerar";
+
+/* Animate suggestions */
+"Bruit de foule au loin" = "Bruit de foule au loin";
+"Il dit « bonjour tout le monde »" = "Il dit « bonjour tout le monde »";
+"Une personne s'approche" = "Une personne s'approche";
+
+/* Pick screen */
+"Choisissez votre préférée" = "Escolha a sua favorita";
+"Regénérer" = "Regenerar";
+"Suivant →" = "Próximo →";
+
+/* Video result screen */
+"Votre vidéo" = "Seu vídeo";
+"Sauvegardée" = "Salvo";
+"Sauvegarder" = "Salvar";
+"Accueil" = "Início";
+
+/* Result screen */
+"**%lld** crédits restants" = "**%lld** créditos restantes";
+"Recharger →" = "Recarregar →";
+
+/* Prompt screen — missing */
+"Your Scene" = "Sua Cena";
+"Generate" = "Gerar";
+"prompt_placeholder" = "Golden hour em um terraço em Paris, lendo um livro…";
+"suggestion_1" = "Golden hour em um terraço em Capri";
+"suggestion_2" = "Brasserie parisiense à luz de velas, lendo uma carta";
+"suggestion_3" = "Backstage de um desfile, sombras dramáticas";
+"suggestion_4" = "Luz do entardecer em um riad em Marrakech, tomando chá";
+"suggestion_5" = "Estúdio, luz lateral dura, olhando para a câmera";
+"suggestion_6" = "Caminhando pela multidão de Tóquio à noite";
+
+/* Processing screen */
+"Creating your scene" = "Criando sua cena";
+"THIS TAKES ~20 SECONDS" = "ISSO LEVA ~20 SEGUNDOS";
+"Back" = "Voltar";
+
+/* Result screen — missing */
+"Save" = "Salvar";
+"Share" = "Compartilhar";
+"AI Generated" = "Gerado por IA";
+"AURA AI Studio" = "AURA AI Studio";
+"Other" = "Outro";
+"Animate ✦" = "Animar ✦";
+
+/* Video processing */
+"Erreur" = "Erro";
+"Réessayer" = "Tentar novamente";
+"Annuler" = "Cancelar";
+"Création de la vidéo" = "Criando o vídeo";
+
+/* Camera */
+"photos" = "fotos";
+"next" = "próximo";
+
+/* Gallery */
+"Backgrounds" = "Fundos";
+"← Back" = "← Voltar";
+"Select" = "Selecionar";
+
+/* Components */
+"BACKGROUND" = "FUNDO";
+"See all →" = "Ver tudo →";
+"Step into the light" = "Entre na luz";
+"cr" = "cr";
+
+/* Animate screen — missing */
+"animate_placeholder" = "Levantando um copo, rindo…";
+"animate_suggestion_zoom" = "Zoom lento para frente";
+"animate_suggestion_pullback" = "Câmera recua lentamente";
+"animate_suggestion_turn" = "Vira a cabeça para a câmera";
+"animate_suggestion_laugh" = "Rindo, levanta um copo";
+"animate_suggestion_crowd" = "Barulho de multidão ao longe";
+"animate_suggestion_piano" = "Música de piano ao fundo";
+"animate_suggestion_approach" = "Alguém se aproxima";
+"Audio & mouvement" = "Áudio e movimento";
+"Son et motion générés · Veo 3.1" = "Som e movimento gerados · Veo 3.1";
+"Enregistrement prêt" = "Gravação pronta";
+"Appuie pour enregistrer ta voix" = "Toque para gravar sua voz";
+"capture_section_image_then_video" = "Criar imagem e depois vídeo";
+"capture_section_video_only" = "Criar apenas vídeo";
+"processing_step_analysing" = "Analisando suas fotos";
+"processing_step_creating" = "Criando sua cena";
+"processing_step_finalising" = "Finalizando resultado";
+
+"direct_animate_label" = "A sua foto diretamente animada";
+"Toutes vos données seront supprimées définitivement. Cette action est irréversible." = "Todos os seus dados serão eliminados permanentemente. Esta ação é irreversível.";
+"Supprimer" = "Eliminar";
+
+/* Paywall */
+"paywall_1_video" = "1 vídeo";
+
+/* Products — recharge packs */
+"pack_recharge_s_title" = "Recarga S";
+"pack_recharge_m_title" = "Recarga M";
+"pack_recharge_l_title" = "Recarga L";
+"pack_tag_popular" = "Popular";
+"pack_tag_best_value" = "Melhor valor";
+"pack_15_credits" = "15 créditos";
+"pack_35_credits" = "35 créditos";
+"pack_95_credits" = "95 créditos";
+
+/* Products — subscriptions */
+"sub_monthly_title" = "Mensal";
+"sub_monthly_subtitle" = "60 créditos / mês";
+"sub_monthly_price" = "€9.99/mês";
+"sub_pro_subtitle" = "130 créditos / mês";
+"sub_pro_price" = "€19.99/mês";
+"sub_annual_title" = "Anual";
+"sub_annual_subtitle" = "450 créditos / ano";
+"sub_annual_price" = "€59.99/ano";
+
+/* Camera scan positions */
+"scan_label_face" = "Frente";
+"scan_instruction_face" = "Olhe em frente";
+"scan_label_left_profile" = "Perfil esquerdo";
+"scan_instruction_left_profile" = "Vire a cabeça para a esquerda";
+"scan_label_right_profile" = "Perfil direito";
+"scan_instruction_right_profile" = "Vire a cabeça para a direita";
+"scan_label_three_quarter_left" = "3/4 esquerda";
+"scan_instruction_three_quarter_left" = "Levemente para a esquerda";
+"scan_label_three_quarter_right" = "3/4 direita";
+"scan_instruction_three_quarter_right" = "Levemente para a direita";
+"camera_mode_face_scan" = "DIGITALIZAÇÃO FACIAL";
+
+"pack_test_title" = "Pack inicial";
+"pack_test_subtitle" = "Teste · uso único";
+"pack_s_credits" = "30 créditos";
+"pack_m_credits" = "65 créditos";
+"pack_l_credits" = "140 créditos";
+"credits_unit" = "créditos";
+"credits_per_month" = "créditos / mês";
+"credits_per_year" = "créditos / ano";
+"How AURA uses AI" = "Como o Aura usa a IA";
+"To generate your portraits and videos, AURA sends your photos to third-party AI services. No data is used to train AI models." = "Para gerar seus retratos e vídeos, o Aura envia suas fotos para serviços de IA de terceiros. Nenhum dado é usado para treinar modelos.";
+"Your photos" = "Suas fotos";
+"Sent to AI services to generate your portrait" = "Enviadas a serviços de IA para gerar seu retrato";
+"Your videos" = "Seus vídeos";
+"Generated by AI from your image" = "Gerados por IA a partir da sua imagem";
+"Your privacy" = "Sua privacidade";
+"Photos are not stored or used for training" = "As fotos não são armazenadas nem usadas para treinamento";
+"I understand — Continue" = "Entendo — Continuar";
+"Privacy Policy" = "Política de privacidade";
+"Generation failed" = "Geração falhou";
+"Back" = "Voltar";
+
+"paywall_privacy_policy" = "Privacidade";
+"paywall_terms_of_use" = "Termos de uso";

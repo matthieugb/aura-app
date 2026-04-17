@@ -1,0 +1,225 @@
+/* Onboarding slide 5 */
+"onboarding_slide5_title" = "Always Cutting-Edge";
+"onboarding_slide5_subtitle" = "";
+"onboarding_slide5_description" = "We follow every new release to integrate the latest models , those that combine exceptional quality with controlled costs.";
+
+/* Onboarding */
+"Commencer" = "Get started";
+"Suivant" = "Next";
+"Passer" = "Skip";
+
+/* Onboarding page titles */
+"Shootez" = "Shoot";
+"Transformez" = "Transform";
+"Animez" = "Animate";
+
+/* Onboarding page subtitles */
+"Votre studio photo IA" = "Your AI photo studio";
+"Selfie ou galerie" = "Selfie or gallery";
+"Fond, lumière, style" = "Background, light, style";
+"Photos en vidéos" = "Photos to videos";
+
+/* Onboarding page descriptions */
+"Portraits, mises en scène, vidéos.\nTout part d'un selfie." = "Portraits, scenes, videos.\nAll from a selfie or a photo.";
+"Prenez un selfie ou importez une photo\npour commencer à générer avec l'IA." = "Take a selfie or import a photo\nto start generating with AI.";
+"Changez de mise en scène\nen quelques mots." = "Change your scene\nwith just a few words.";
+"Donnez vie à vos images\navec du mouvement et du son." = "Bring your images to life\nwith movement and sound.";
+
+/* Onboarding slide 4 prompt chip */
+"un oiseau s'approche de la fenêtre" = "a bird approaches the window";
+
+/* Splash / Auth */
+"Continuer avec Apple" = "Continue with Apple";
+"Aucune donnée partagée sans votre accord" = "No data shared without your consent";
+
+/* Settings */
+"Paramètres" = "Settings";
+"Revoir l'introduction" = "View introduction again";
+"Restaurer les achats" = "Restore purchases";
+"Supprimer mon compte" = "Delete my account";
+"Se déconnecter" = "Sign out";
+
+/* Paywall */
+"Crédits AURA" = "AURA Credits";
+"3 crédits · 2 portraits  ·  4 crédits · 1 vidéo 4s" = "3 credits · 2 portraits  ·  4 credits · 1 video 4s";
+"Recharges" = "Top-ups";
+"Abonnements" = "Subscriptions";
+"Résiliation à tout moment depuis les réglages de l'App Store." = "Cancel anytime from App Store settings.";
+
+/* Capture mode */
+"How do you want to shoot?" = "How do you want to shoot?";
+"Utiliser une photo de référence" = "Use a reference photo";
+"Rapide" = "Quick";
+"Importer" = "Import";
+"Depuis la galerie" = "From gallery";
+"Selfie" = "Selfie";
+"1 photo" = "1 photo";
+"Utiliser plusieurs photos de référence" = "Use multiple reference photos";
+"Meilleure qualité" = "Best quality";
+"Plusieurs photos" = "Multiple photos";
+"Visage scan" = "Face scan";
+"3 – 5 photos" = "3 – 5 photos";
+
+/* Prompt screen */
+"LIEU, ACTION, LUMIÈRE" = "PLACE, ACTION, LIGHT";
+"GLISSER · PINCER POUR RECADRER" = "DRAG · PINCH TO CROP";
+"Fermer" = "Done";
+"3 crédits" = "3 credits";
+
+/* Animate screen */
+"Créer une vidéo" = "Create a video";
+"La vidéo commencera par cette image (audio inclus)" = "The video will start from this image (audio included)";
+"ACTION, MOUVEMENT, SON" = "ACTION, MOVEMENT, SOUND";
+"· facultatif" = "· optional";
+"Générer" = "Generate";
+
+/* Animate suggestions (French ones) */
+"Bruit de foule au loin" = "Bruit de foule au loin";
+"Il dit « bonjour tout le monde »" = "Il dit « bonjour tout le monde »";
+"Une personne s'approche" = "Une personne s'approche";
+
+/* Pick screen */
+"Choisissez votre préférée" = "Choose your favourite";
+"Regénérer" = "Regenerate";
+"Suivant →" = "Next →";
+
+/* Video result screen */
+"Votre vidéo" = "Your video";
+"Sauvegardée" = "Saved";
+"Sauvegarder" = "Save";
+"Accueil" = "Home";
+
+/* Result screen */
+"**%lld** crédits restants" = "**%lld** credits remaining";
+"Recharger →" = "Top up →";
+
+/* Prompt screen — missing */
+"Your Scene" = "Your Scene";
+"Generate" = "Generate";
+"prompt_placeholder" = "Golden hour rooftop in Paris, reading a book…";
+"suggestion_1" = "Golden hour on a Capri terrace";
+"suggestion_2" = "Candlelit Parisian brasserie, reading a letter";
+"suggestion_3" = "Backstage at a fashion show, dramatic shadows";
+"suggestion_4" = "Dusk light in a Marrakech riad, drinking tea";
+"suggestion_5" = "Studio, harsh side light, staring at camera";
+"suggestion_6" = "Walking through a Tokyo crowd at night";
+
+/* Processing screen */
+"Creating your scene" = "Creating your scene";
+"THIS TAKES ~20 SECONDS" = "THIS TAKES ~20 SECONDS";
+"Back" = "Back";
+
+/* Result screen — missing */
+"Save" = "Save";
+"Share" = "Share";
+"AI Generated" = "AI Generated";
+"AURA AI Studio" = "AURA AI Studio";
+"Other" = "Other";
+"Animate ✦" = "Animate ✦";
+
+/* Video processing */
+"Erreur" = "Error";
+"Réessayer" = "Retry";
+"Annuler" = "Cancel";
+"Création de la vidéo" = "Creating video";
+
+/* Camera */
+"photos" = "photos";
+"next" = "next";
+
+/* Gallery */
+"Backgrounds" = "Backgrounds";
+"← Back" = "← Back";
+"Select" = "Select";
+
+/* Components */
+"BACKGROUND" = "BACKGROUND";
+"See all →" = "See all →";
+"Step into the light" = "Step into the light";
+"cr" = "cr";
+
+/* Animate screen — missing */
+"animate_placeholder" = "Raising a glass, laughing…";
+"animate_suggestion_zoom" = "Slow zoom in";
+"animate_suggestion_pullback" = "Camera pulls back slowly";
+"animate_suggestion_turn" = "Turns head toward camera";
+"animate_suggestion_laugh" = "Laughing, raises a glass";
+"animate_suggestion_crowd" = "Crowd noise in the distance";
+"animate_suggestion_piano" = "Piano music in the background";
+"animate_suggestion_approach" = "Someone approaches";
+"Audio & mouvement" = "Audio & movement";
+"Son et motion générés · Veo 3.1" = "AI-generated sound & motion · Veo 3.1";
+"Enregistrement prêt" = "Recording ready";
+"Appuie pour enregistrer ta voix" = "Tap to record your voice";
+"capture_section_image_then_video" = "Create image then video";
+"capture_section_video_only" = "Create video only";
+"processing_step_analysing" = "Analysing your photos";
+"processing_step_creating" = "Creating your scene";
+"processing_step_finalising" = "Finalising result";
+
+/* Capture — video only */
+"direct_animate_label" = "Your photo directly animated";
+
+/* Settings — account deletion */
+"Toutes vos données seront supprimées définitivement. Cette action est irréversible." = "All your data will be permanently deleted. This action cannot be undone.";
+"Supprimer" = "Delete";
+
+/* Paywall — missing keys */
+"paywall_1_video" = "1 video";
+
+/* Products — recharge packs */
+"pack_recharge_s_title" = "Top-up S";
+"pack_recharge_m_title" = "Top-up M";
+"pack_recharge_l_title" = "Top-up L";
+"pack_tag_popular" = "Popular";
+"pack_tag_best_value" = "Best value";
+"pack_15_credits" = "15 credits";
+"pack_35_credits" = "35 credits";
+"pack_95_credits" = "95 credits";
+
+/* Products — subscriptions */
+"sub_monthly_title" = "Monthly";
+"sub_monthly_subtitle" = "60 credits / month";
+"sub_monthly_price" = "€9.99/mo";
+"sub_pro_subtitle" = "130 credits / month";
+"sub_pro_price" = "€19.99/mo";
+"sub_annual_title" = "Annual";
+"sub_annual_subtitle" = "450 credits / year";
+"sub_annual_price" = "€59.99/yr";
+
+/* Camera scan positions */
+"scan_label_face" = "Face";
+"scan_instruction_face" = "Look straight ahead";
+"scan_label_left_profile" = "Left profile";
+"scan_instruction_left_profile" = "Turn your head left";
+"scan_label_right_profile" = "Right profile";
+"scan_instruction_right_profile" = "Turn your head right";
+"scan_label_three_quarter_left" = "3/4 left";
+"scan_instruction_three_quarter_left" = "Slightly to the left";
+"scan_label_three_quarter_right" = "3/4 right";
+"scan_instruction_three_quarter_right" = "Slightly to the right";
+"camera_mode_face_scan" = "FACE SCAN";
+
+"pack_test_title" = "Starter Pack";
+"pack_test_subtitle" = "Trial · one time";
+"pack_s_credits" = "30 credits";
+"pack_m_credits" = "65 credits";
+"pack_l_credits" = "140 credits";
+"credits_unit" = "credits";
+"credits_per_month" = "credits / month";
+"credits_per_year" = "credits / year";
+"How AURA uses AI" = "How Aura uses AI";
+"To generate your portraits and videos, AURA sends your photos to third-party AI services. No data is used to train AI models." = "To generate your portraits and videos, Aura sends your photos to third-party AI services. No data is used to train AI models.";
+"Your photos" = "Your photos";
+"Sent to AI services to generate your portrait" = "Sent to AI services to generate your portrait";
+"Your videos" = "Your videos";
+"Generated by AI from your image" = "Generated by AI from your image";
+"Your privacy" = "Your privacy";
+"Photos are not stored or used for training" = "Photos are not stored or used for training";
+"I understand — Continue" = "I understand — Continue";
+"Privacy Policy" = "Privacy Policy";
+"Generation failed" = "Generation failed";
+"Back" = "Back";
+
+"paywall_privacy_policy" = "Privacy Policy";
+"paywall_terms_of_use" = "Terms of Use";
